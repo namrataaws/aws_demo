@@ -1,9 +1,9 @@
 terraform {
   backend "s3" {
-    bucket         = "terraform-backend-files-nk"
+    bucket         = "my-tf-test-bucket-harshal"
     key            = "terraformstatefile/statefileRDS"
     region         = "ap-south-1"
-    dynamodb_table = "terraform_backend_statefile"
+    dynamodb_table = "terraform-backend-statefile"
 
   }
 }
